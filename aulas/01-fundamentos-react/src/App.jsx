@@ -1,9 +1,10 @@
-function App() {
+import { Post } from './Post';
+
+export function App() {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
+    <div>
+      <Post />
     </div>
   )
 }
 
-export default App
