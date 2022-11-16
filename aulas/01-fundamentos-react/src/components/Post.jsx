@@ -1,4 +1,6 @@
+import { Avatar } from './Avatar';
 import { Comment } from './Comment';
+
 import styles from './Post.module.css';
 
 export function Post() {
@@ -6,10 +8,10 @@ export function Post() {
         <article className={styles.post}>
             <header>
                 <div className={styles.author}>
-                    <img className={styles.avatar} src="https://github.com/devnilo.png" />
+                    <Avatar hasBorder={true} src="https://github.com/henriquedantass.png" />
                     <div className={styles.authorInfo}>
-                        <strong>Danilo Araujo</strong>
-                        <span>Web Developer</span>
+                        <strong>Henrique Dantas</strong>
+                        <span>Front-end Engineer</span>
                     </div>
                 </div>
 
@@ -19,14 +21,12 @@ export function Post() {
             <div className={styles.content}>
                 <p>Fala galeraa 👋</p>
 
-                <p>Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀</p>
-
-                <p><a href="">jane.design/doctorcare</a></p>
+                <p>Acabei de subir mais um projeto no meu portifa. É um projeto que fiz junto com o Elon Musk sobre os foguetes. O nome do projeto é Voando Alto 🚀</p>
 
                 <p>
                     <a href="">#novoprojeto</a>{' '}
-                    <a href="">#nlw</a> {' '}
-                    <a href="">#rocketseat</a>
+                    <a href="">#spacex</a> {' '}
+                    <a href="">#pleno2022</a>
                 </p>
             </div>
 
@@ -43,8 +43,6 @@ export function Post() {
             </form>
 
             <div className={styles.commentList}>
-                <Comment />
-                <Comment />
                 <Comment />
             </div>
         </article>
