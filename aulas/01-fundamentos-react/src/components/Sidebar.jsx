@@ -14,7 +14,7 @@ export function Sidebar() {
                 <img className={styles.avatar} src="https://github.com/devnilo.png" />
 
                 <strong>Danilo Araujo</strong>
-                <span>Fullstack Developer</span>
+                <span>Web Developer</span>
             </div>
 
             <footer>
